@@ -1,0 +1,14 @@
+<h1>Stupid coaching</h1>
+<form action="answer" class="form-inline">
+  <input type="text" name="question">
+  <input type="submit" value="Ask!" class="btn btn-success">
+</form>
+<div class="card border border-success" style="width: 800px; height: 100px; padding: 10px; background-color: rgba(0,0,255,0.1);">
+<p><%= @question%></p>
+<p>-Your question</p>
+</div>
+<div class="card vh-20 border-left-3 border-primary m-y-3" style="width: 800px; height: 100px; padding: 10px; background-color: rgba(0,0,255,0.1);">
+<p><%= @answer%></p>
+<p>-Your Coach:</p>
+</div>
+<%= link_to "Ask a new question", ask_path %>
